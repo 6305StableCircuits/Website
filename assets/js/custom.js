@@ -159,11 +159,18 @@ $(document).ready(function() {
     }
 
       //  jQuery.get('http://127.0.0.1:8888/foo.htm', function(data) {
-      var thisPath=window.location.origin + '/foo.htm';
+      var thisPath=window.location.origin + '/AboutUs.htm';
 
       jQuery.get(thisPath, function(data) {
         // alert(data);
-        document.getElementById("announcementns").innerHTML=data;
+        document.getElementById("AboutUs").innerHTML=data;
+      });
+
+      var thisPathPast=window.location.origin + '/Past.htm';
+
+      jQuery.get(thisPath, function(data) {
+        // alert(data);
+        document.getElementById("PastA").innerHTML=data;
       });
 
 });
